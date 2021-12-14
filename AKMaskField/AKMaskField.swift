@@ -695,9 +695,9 @@ open class AKMaskField: UITextField, UITextFieldDelegate  {
                 print("   index           : \(char.index)")
                 print("   blockIndex      : \(char.blockIndex)")
                 print("   status          : \(char.status)")
-                print("   pattern         : \(char.pattern)")
+                print("   pattern         : \(char.pattern.debugDescription)")
                 print("   patternRange    : \(char.patternRange)")
-                print("   template        : \(char.template)")
+                print("   template        : \(char.template.debugDescription)")
                 print("   templateRange   : \(char.templateRange)")
             }
             print("")
@@ -707,7 +707,7 @@ open class AKMaskField: UITextField, UITextFieldDelegate  {
 
 //  MARK: - AKMaskFieldDelegate
 
-public protocol AKMaskFieldDelegate: class {
+public protocol AKMaskFieldDelegate: AnyObject {
     
     /**
      
