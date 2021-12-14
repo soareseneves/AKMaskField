@@ -15,8 +15,7 @@ let package = Package(
             path: "AKMaskField",
             exclude: [
                 "Info.plist",
-            ],
-            resources: [.process("Resources")]
+            ]
         )
     ]
 )
